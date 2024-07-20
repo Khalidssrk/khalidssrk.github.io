@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    animation: fadeIn 1s ease-in-out;
+    margin: 20px;
+    position: relative; /* Ensure container respects positioning */
+}
+
+.logo {
+    max-width: 150px; /* Adjust the size of the logo as needed */
+    margin-bottom: 20px; /* Space between the logo and heading */
+    margin-top: 50px; /* Add space from the top of the container */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 10px 0; /* Adjusted margin for better spacing */
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: block;
+    transition: transform 0.2s, background-color 0.2s;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+a.linkedin {
+    background-color: #0073b1; /* LinkedIn blue */
+}
+
+a.youtube {
+    background-color: #ff0000; /* YouTube red */
+}
+
+/* Example colors for additional links */
+a:nth-child(3) {
+    background-color: #4CAF50; /* Example color */
+}
+
+a:nth-child(4) {
+    background-color: #FF5722; /* Example color */
+}
+
+/* Add custom colors for other links as needed */
+
+a:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
